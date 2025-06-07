@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Your Usage - Dopamine Detox Coach</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/components.css" />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Logo" />
+      <h1>Dopamine Detox Coach</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="usage.html" class="active">Usage</a>
+      <a href="habits.html">Habits</a>
+      <a href="detox.html">Detox</a>
+      <a href="rewards.html">Rewards</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <section class="section-title">
+      <h2>Your App Usage Dashboard</h2>
+      <p>Track how much time you spend on different platforms and discover trends in your digital behavior.</p>
+    </section>
+
+    <section class="usage-summary">
+      <div class="summary-card">
+        <h3>Total Screen Time</h3>
+        <p id="total-screen-time">-- hrs</p>
+      </div>
+      <div class="summary-card">
+        <h3>Most Used App</h3>
+        <p id="top-app">--</p>
+      </div>
+      <div class="summary-card">
+        <h3>Avg. Opens Per Day</h3>
+        <p id="avg-opens">--</p>
+      </div>
+    </section>
+
+    <section class="usage-chart">
+      <h3>Daily Screen Time (Mock Data)</h3>
+      <canvas id="screenTimeChart"></canvas>
+    </section>
+
+    <section class="app-list">
+      <h3>App-wise Usage</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>App Name</th>
+            <th>Time Spent</th>
+            <th>Opens</th>
+            <th>Avg. Session</th>
+          </tr>
+        </thead>
+        <tbody id="app-usage-data">
+          <!-- Filled by JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="alert-tip">
+      <h4>Mindful Tip</h4>
+      <p>If you're spending over 3 hours daily on social media, consider enabling <strong>Dopamine-Free Mode</strong> to build awareness and reset your habit loop.</p>
+      <a href="detox.html" class="primary-btn">Enable Detox Mode</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h4>About</h4>
+        <p>This tool helps you detect and reverse unconscious digital behaviors.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="habits.html">Habits</a></li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Help</h4>
+        <p>Email: support@dopaminedetoxcoach.com</p>
+      </div>
+    </div>
+    <p class="footer-note">© 2025 Dopamine Detox Coach. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Libraries & Custom -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../src/js/tracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+/* style.css */
+/* Base styles for Dopamine Detox Coach */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(74, 144, 226, 0.3);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #d0e6ff;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.3rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #357ABD;
+}
+
+button:disabled,
+button[disabled] {
+  background: #b0c4de;
+  cursor: not-allowed;
+}
+
+.alert-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.alert-box {
+  background: #ffecb3;
+  border-left: 5px solid #f9a825;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(249, 168, 37, 0.3);
+  font-weight: 600;
+}
+
+.micro-habit-btn {
+  display: block;
+  margin-top: 0.7rem;
+  background: #43a047;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.micro-habit-btn:hover {
+  background: #2e7d32;
+}
+
+.habit-card {
+  background: #e3f2fd;
+  border: 1px solid #90caf9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.habit-points {
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.complete-btn {
+  margin-top: 0.8rem;
+}
+
+#pointsDisplay,
+#badgesDisplay {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  background: #81c784;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  margin: 0.3rem 0.5rem 0 0;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.challenge-card {
+  background: #fff3e0;
+  border: 1px solid #ffb74d;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.challenge-status {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+.challenge-status.participating {
+  color: #ef6c00;
+}
+
+.join-btn {
+  background: #fb8c00;
+  color: white;
+}
+
+.join-btn:hover {
+  background: #ef6c00;
+}
+
+footer {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

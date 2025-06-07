@@ -1,0 +1,26 @@
+{
+    "name": "dopamine-detox-coach",
+    "version": "1.0.0",
+    "description": "Break free from social media addiction with mindfulness and habit tracking.",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",
+      "dev": "nodemon app.js"
+    },
+    "keywords": [
+      "dopamine-detox",
+      "habit-tracker",
+      "mindfulness",
+      "productivity",
+      "mental-health"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.18.4"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.22"
+    }
+  }
+  

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rewards & Progress - Dopamine Detox Coach</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/components.css" />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Logo" />
+      <h1>Dopamine Detox Coach</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="usage.html">Usage</a>
+      <a href="habits.html">Habits</a>
+      <a href="detox.html">Detox</a>
+      <a href="rewards.html" class="active">Rewards</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <section class="section-title">
+      <h2>Track Your Progress & Earn Rewards</h2>
+      <p>Build healthy dopamine loops. Celebrate each step forward with points, badges, and streaks!</p>
+    </section>
+
+    <section class="points-progress">
+      <div class="points-display">
+        <h3>Total Points</h3>
+        <p id="totalPoints">🔔 320</p>
+      </div>
+      <div class="streak-display">
+        <h3>Current Streak</h3>
+        <p>🔥 5 Days</p>
+      </div>
+      <div class="badge-display">
+        <h3>Badges Earned</h3>
+        <div class="badges">
+          <span class="badge earned">🌱 Starter</span>
+          <span class="badge earned">🚀 Momentum</span>
+          <span class="badge">🌈 Flow Mode</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="rewards-catalog">
+      <h3>Unlockable Rewards</h3>
+      <ul class="reward-list">
+        <li>
+          <h4>🎧 15 min Music Session</h4>
+          <p>Cost: 100 Points</p>
+          <button class="redeem-btn">Redeem</button>
+        </li>
+        <li>
+          <h4>🍫 Healthy Snack</h4>
+          <p>Cost: 200 Points</p>
+          <button class="redeem-btn">Redeem</button>
+        </li>
+        <li>
+          <h4>🛌 30 min Nap</h4>
+          <p>Cost: 150 Points</p>
+          <button class="redeem-btn">Redeem</button>
+        </li>
+        <li>
+          <h4>📺 10 min Mindful Screen Time</h4>
+          <p>Cost: 250 Points</p>
+          <button class="redeem-btn" disabled>Locked</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reward-notice">
+      <h3>Why Rewards?</h3>
+      <p>Rewarding healthy actions gives your brain a new pattern to follow. Rather than seeking fast rewards through endless scrolling, you now train it to earn joy through discipline.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h4>About</h4>
+        <p>Every detox action you take is a step toward freedom. This system rewards your consistency.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="habits.html">Habits</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: rewards@dopaminedetoxcoach.com</p>
+      </div>
+    </div>
+    <p class="footer-note">© 2025 Dopamine Detox Coach. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Basic placeholder JS logic for redeem buttons
+    const redeemButtons = document.querySelectorAll('.redeem-btn');
+    redeemButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        if (!button.disabled) {
+          alert("🎉 Reward redeemed successfully!");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

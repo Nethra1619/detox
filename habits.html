@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthy Habits - Dopamine Detox Coach</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/components.css" />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Logo" />
+      <h1>Dopamine Detox Coach</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="usage.html">Usage</a>
+      <a href="habits.html" class="active">Habits</a>
+      <a href="detox.html">Detox</a>
+      <a href="rewards.html">Rewards</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <section class="section-title">
+      <h2>Build Healthy Habits</h2>
+      <p>Replace addictive behaviors with small, consistent actions that rewire your brain positively.</p>
+    </section>
+
+    <section class="habit-tracker">
+      <h3>Today's Micro-Habits</h3>
+      <div id="habit-list" class="habit-list">
+        <!-- Loaded via habits.js -->
+      </div>
+    </section>
+
+    <section class="add-habit-form">
+      <h3>Add Your Own Habit</h3>
+      <form id="habitForm">
+        <input type="text" id="habitName" placeholder="E.g., 5 min meditation" required />
+        <input type="number" id="habitPoints" placeholder="Points (e.g., 10)" required />
+        <textarea id="habitDesc" placeholder="Short description (optional)"></textarea>
+        <button type="submit" class="primary-btn">Add Habit</button>
+      </form>
+    </section>
+
+    <section class="habit-rewards">
+      <h3>Why It Works</h3>
+      <p>Healthy dopamine is earned, not given instantly. These micro-habits build resilience, patience, and long-term satisfaction—key components of digital discipline.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h4>About</h4>
+        <p>We help people create mindful routines to break tech addiction one habit at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="detox.html">Detox Mode</a></li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: hello@dopaminedetoxcoach.com</p>
+      </div>
+    </div>
+    <p class="footer-note">© 2025 Dopamine Detox Coach. All rights reserved.</p>
+  </footer>
+
+  <script src="../src/js/habits.js"></script>
+</body>
+</html>

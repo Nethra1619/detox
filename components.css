@@ -1,0 +1,171 @@
+/* components.css */
+/* Component-specific styles for Dopamine Detox Coach */
+
+/* Navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+nav a {
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Alerts */
+.alert-box strong {
+  color: #f57c00;
+}
+
+/* Habit Cards */
+.habit-card h3 {
+  color: #1e88e5;
+  margin-bottom: 0.5rem;
+}
+
+.habit-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  color: #555;
+}
+
+.habit-complete-btn {
+  background-color: #388e3c;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.habit-complete-btn:hover:not(:disabled) {
+  background-color: #2e7d32;
+}
+
+.habit-complete-btn:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* Points and badges section */
+#pointsDisplay, #badgesDisplay {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Badge styles */
+.badge {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  letter-spacing: 0.5px;
+}
+
+/* Challenge Cards */
+.challenge-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.challenge-card p {
+  font-size: 0.95rem;
+  color: #795548;
+}
+
+/* Buttons */
+button {
+  outline: none;
+}
+
+button:focus {
+  box-shadow: 0 0 3px 2px rgba(74, 144, 226, 0.6);
+}
+
+/* Modal windows (optional usage) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Form inputs */
+input, textarea, select {
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Cards container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a90e2;
+  border-radius: 6px;
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
